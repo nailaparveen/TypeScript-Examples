@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #container
+        {
+            width:50%;
+            background-color: white;
+            margin:auto;
+
+        }
+
+        #layer
+        {
+            background-color: darkgray;
+            margin:10px;
+            width:90%;
+
+        }
+        #screen{
+            margin-bottom:10px;
+            margin-left:360px;
+
+            height:30px;
+
+        }
+        .btn{
+            width:80px;
+            height:80px;
+            margin:15px;
+
+        }
+        .btnbig{
+            width: 250px;
+            height: 80px;
+            margin : 30px;
+        }
+    </style>
+</head>
+<body>
+<script src="calculator.js"></script>
+<div id="container">
+    <div id="layer" >
+        <br>
+        <input class="btn" type="button" value="1"  onclick="makeNo(this.value)">
+        <input class="btn" type="button" value="2"  onclick="makeNo(this.value)">
+        <input class="btn" type="button" value="3"  onclick="makeNo(this.value)">
+        <input class="btn" type="button" value="4"  onclick="makeNo(this.value)">
+        <input class="btn" type="button" value="5"  onclick="makeNo(this.value)">
+        <br>
+
+        <input class="btn" type="button" value="6"  onclick="makeNo(this.value)">
+        <input class="btn" type="button" value="7"  onclick="makeNo(this.value)">
+        <input class="btn" type="button" value="8"  onclick="makeNo(this.value)">
+        <input class="btn" type="button" value="9"  onclick="makeNo(this.value)">
+        <input class="btn" type="button" value="0"  onclick="makeNo(this.value)">
+
+        <br>
+        <input class="btn" type="button" value="+"  onclick="makeFn(this.value)">
+        <input class="btn" type="button" value="-"  onclick="makeFn(this.value)">
+        <input class="btn" type="button" value="*"  onclick="makeFn(this.value)">
+        <input class="btn" type="button" value="/"  onclick="makeFn(this.value)">
+        <input class="btn" type="button" value="C"  onclick="clearOne(this.value)">
+
+
+        <br>
+        <input class="btn" type="button" value="("  onclick="makeFn(this.value)">
+        <input class="btn" type="button" value=")"  onclick="makeFn(this.value)">
+        <input class="btnbig" type="button" value="="  onclick="makeAns(this.value)">
+    </div>
+    <p> Limitations: brackets cannot be used as multiplication operator like 2(4)=8 and leading symbols like -2 or +2 cannot be used</p>
+</div>
+</body>
+</html>
